@@ -24,7 +24,7 @@ const Dashboard = () => {
 
     const runDraw = async () => {
         try {
-            const res = await axios.post("http://localhost:5000/api/draw/run");
+            const res = await axios.post("https://golf-charity-platform-siop.onrender.com/api/draw/run");
             setDrawResult(res.data);
         } catch (err) {
             console.log("Draw error:", err);
